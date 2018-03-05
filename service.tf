@@ -3,7 +3,7 @@ resource "aws_ecs_service" "test-ecs-service" {
   	iam_role        = "${aws_iam_role.ecs-service-role.name}"
   	cluster         = "${aws_ecs_cluster.test-ecs-cluster.id}"
   	task_definition = "${aws_ecs_task_definition.wordpress.family}:${max("${aws_ecs_task_definition.wordpress.revision}", "${data.aws_ecs_task_definition.wordpress.revision}")}"
-  	desired_count   = 1
+  	desired_count   = 2
     depends_on = ["null_resource.alb_exists"]
 
   	load_balancer {
