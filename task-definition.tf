@@ -12,7 +12,7 @@ resource "aws_ecs_task_definition" "wordpress" {
     "essential": true,
     "portMappings": [
       {
-        "containerPort": 80,
+        "containerPort": 3000,
         "hostPort": 80
       }
     ],

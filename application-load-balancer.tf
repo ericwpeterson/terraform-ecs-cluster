@@ -12,7 +12,7 @@ resource "aws_alb" "ecs-load-balancer" {
 resource "aws_alb_target_group" "ecs-target-group" {
     #name                = "ecs-target-group"
     name_prefix         = "myelbt"
-    port                = "80"
+    port                = "8080"
     protocol            = "HTTP"
     vpc_id              = "${aws_vpc.test_vpc.id}"
 
