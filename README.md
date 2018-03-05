@@ -1,6 +1,6 @@
 # terraform-ecs-cluster
 
-This example is meant to be used as a starting template for creating an ECS cluster Service, an application load balancer, a task definition and VPC including all networking resources. The sample container is a simple NodeJS express app that prints hello world on port 3000. It should be reachable using the load balancer ip or the instance ip on port 80.
+This example is meant to be used as a starting template for creating an ECS cluster Service, an application load balancer, a task definition and VPC including all networking resources. The sample container is a simple NodeJS express app that prints hello world on port 3000. The service defines two tasks to run this container. After running this example the web server should be reachable by connecting to the load balancer ip. 
 
 ## Deploying
 
