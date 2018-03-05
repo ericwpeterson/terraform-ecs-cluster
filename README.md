@@ -4,6 +4,8 @@ This example is meant to be used as a starting template for creating an ECS clus
 
 ## Deploying
 
+In the Amazon Management Console create a key pair named my-key-pair. You can use this key later for connecting to the container host with SSH.  
+
 To execute a deployment:
 
 ```console
