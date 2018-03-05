@@ -1,13 +1,13 @@
-data "aws_ecs_task_definition" "wordpress" {
-  task_definition = "${aws_ecs_task_definition.wordpress.family}"
+data "aws_ecs_task_definition" "helloworld" {
+  task_definition = "${aws_ecs_task_definition.helloworld.family}"
 }
 
-resource "aws_ecs_task_definition" "wordpress" {
+resource "aws_ecs_task_definition" "helloworld" {
     family                = "hello_world"
     container_definitions = <<DEFINITION
 [
   {
-    "name": "wordpress",
+    "name": "helloworld",
     "image": "eric1123/docker-nodejs-demo",
     "essential": true,
     "portMappings": [
