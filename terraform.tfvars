@@ -1,6 +1,6 @@
 ecs_cluster="my-cluster"
 ecs_key_pair_name="my-key-pair"
-region = "us-east-1"
+aws_region = "us-east-1"
 test_vpc = "my-vpc"
 test_network_cidr = "10.0.0.0/16"
 test_public_01_cidr = "10.0.0.0/25"
