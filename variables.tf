@@ -15,7 +15,7 @@ variable "ecs_key_pair_name" {
   description = "EC2 instance key pair name"
 }
 
-variable "region" {
+variable "aws_region" {
   description = "AWS region"
 }
 

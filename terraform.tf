@@ -1,3 +1,7 @@
+provider "aws" {
+  region     = "${var.aws_region}"
+}
+
 terraform {
  backend  "s3" {
  encrypt = true
@@ -7,3 +11,5 @@ terraform {
  key = "ecs-cluster-state/terraform.tfstate"
  }
 }
+
+/var/jenkins_home/terraform.tfvars
