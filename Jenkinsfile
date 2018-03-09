@@ -1,8 +1,5 @@
 node {
    stage ('Checkout') {
-     sh 'whoami'
-     sh 'env'
-     sh 'echo $AWS_ACCESS_KEY_ID'
      checkout scm
    }
    stage ('Terraform init') {
