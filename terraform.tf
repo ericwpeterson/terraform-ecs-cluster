@@ -11,5 +11,3 @@ terraform {
  key = "ecs-cluster-state/terraform.tfstate"
  }
 }
-
-/var/jenkins_home/terraform.tfvars
