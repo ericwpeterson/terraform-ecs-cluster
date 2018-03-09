@@ -3,7 +3,7 @@ node {
      checkout scm
    }
    stage ('Terraform init') {
-     sh 'terraform init -no-color -var-file=/var/jenkins_home/terraform.tfvars'
+     sh 'terraform init'
    }
    stage ('Terraform Plan') {
      sh 'terraform plan -no-color -out=create.tfplan -var-file=/var/jenkins_home/terraform.tfvars'
