@@ -20,7 +20,7 @@ $ terraform plan -var-file=terraform.tfvars
 ```
 
 ```console
-$ terraform apply --var-file=terraform.tfvars
+$ terraform apply -var-file=terraform.tfvars
 ```
 
 ```console
