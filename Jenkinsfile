@@ -1,5 +1,6 @@
 node {
    stage ('Checkout') {
+     sh 'whoami'
      checkout scm
    }
    stage ('Terraform init') {
