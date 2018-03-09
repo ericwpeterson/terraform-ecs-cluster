@@ -12,6 +12,6 @@ node {
      sh 'terraform plan -no-color -out=create.tfplan -var-file=/var/jenkins_home/terraform.tfvars'
    }
    stage ('Terraform Apply') {
-     sh 'terraform apply -no-color create.tfplan -var-file=/var/jenkins_home/terraform.tfvarsa'
+     sh 'terraform apply -no-color create.tfplan -var-file=/var/jenkins_home/terraform.tfvars'
    }
 }
