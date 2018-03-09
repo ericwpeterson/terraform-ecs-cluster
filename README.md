@@ -2,6 +2,9 @@
 
 This example is meant to be used as a starting template for creating an ECS cluster Service, an application load balancer, a task definition and VPC including all networking resources. The sample container is a simple NodeJS express app that prints hello world on port 3000. The service defines two tasks to run this container. After running this example the web server should be reachable by connecting to the load balancer ip. 
 
+## Create an S3 bucket to save Terraform state
+https://medium.com/@jessgreb01/how-to-terraform-locking-state-in-s3-2dc9a5665cb6
+
 ## Deploying
 
 In the Amazon Management Console create a key pair named my-key-pair. You can use this key later for connecting to the container host with SSH.  
